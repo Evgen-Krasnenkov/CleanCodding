@@ -8,13 +8,14 @@ import java.util.List;
 
 public class RecordedGrip {
 
-    public List<RecordedGrip> retrieveSection(String sectionName) throws StorageException {
+    public List<RecordedGrip> retrieveSection(String sectionName) {
         FileInputStream stream = null;
         try {
             stream = new FileInputStream(sectionName);
             stream.close();
-        } catch (Exception e) {
-            throw new StorageException("retrieval error", e);
+        } catch (IOException e) {
+            throw new StorageException("file problem: ", e);
         }
-        return new ArrayList<RecordedGrip>(); }
+        return new ArrayList<RecordedGrip>();
+    }
 }

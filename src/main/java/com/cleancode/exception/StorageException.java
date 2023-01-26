@@ -1,9 +1,11 @@
 package com.cleancode.exception;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
-public class StorageException extends Exception {
-    public StorageException(String retrieval_error, Exception e) {
-        super(retrieval_error, e);
+public class StorageException extends RuntimeException {
+    public StorageException(String message,Throwable cause) {
+        super(message, cause);
     }
 }
