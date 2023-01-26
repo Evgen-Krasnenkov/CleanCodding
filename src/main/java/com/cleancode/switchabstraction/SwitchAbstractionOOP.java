@@ -1,5 +1,6 @@
-package SwitchAbstractionOOP;
+package com.cleancode.switchabstraction;
 
+//TODO  test this class
 public class SwitchAbstractionOOP {
     public static void main(String[] args) {
         EmployeeFactory employeeFactory = new EmployeeFactoryImpl();

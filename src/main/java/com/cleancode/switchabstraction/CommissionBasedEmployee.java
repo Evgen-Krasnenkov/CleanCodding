@@ -1,4 +1,4 @@
-package SwitchAbstractionOOP;
+package com.cleancode.switchabstraction;
 
 import java.util.Currency;
 
@@ -13,7 +13,7 @@ public class CommissionBasedEmployee extends Employee {
     @Override
     public Money calculatePay() {
         System.out.println("Commission calculate pay of 15 GBP");
-        return new Money(15, Currency.getInstance("GBP"));
+        return new MoneyBuilder().setAmount(15).setCurrency(Currency.getInstance("GBP")).createMoney();
     }
 
     @Override

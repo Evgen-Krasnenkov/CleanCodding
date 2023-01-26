@@ -1,4 +1,4 @@
-package SwitchAbstractionOOP;
+package com.cleancode.switchabstraction;
 
 import java.util.Currency;
 
@@ -13,7 +13,7 @@ public class HourlyPaidEmployee extends Employee{
     @Override
     public Money calculatePay() {
         System.out.println("Full calculate pay of 20 USD");
-        return new Money(30, Currency.getInstance("CAD"));
+        return new MoneyBuilder().setAmount(30).setCurrency(Currency.getInstance("CAD")).createMoney();
     }
 
     @Override

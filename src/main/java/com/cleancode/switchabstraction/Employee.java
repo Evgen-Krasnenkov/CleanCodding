@@ -1,4 +1,4 @@
-package SwitchAbstractionOOP;
+package com.cleancode.switchabstraction;
 
 public abstract class Employee {
     public String name;

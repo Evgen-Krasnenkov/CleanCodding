@@ -1,4 +1,4 @@
-package SwitchAbstractionOOP;
+package com.cleancode.switchabstraction;
 
 public class InvalidEmployeeTypeException extends Exception{
 

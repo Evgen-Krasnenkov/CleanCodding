@@ -1,4 +1,4 @@
-package SwitchAbstractionOOP;
+package com.cleancode.switchabstraction;
 
 import java.util.Currency;
 
@@ -6,9 +6,13 @@ public class Money {
     private int Amount;
     private Currency currency;
 
-    public Money(int amount, Currency currency) {
+    private Money(int amount, Currency currency) {
         Amount = amount;
         this.currency = currency;
+    }
+
+    public static Money createMoney(int amount, Currency currency) {
+        return new Money(amount, currency);
     }
 
     public int getAmount() {
