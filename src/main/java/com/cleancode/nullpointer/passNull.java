@@ -1,7 +1,7 @@
 package com.cleancode.nullpointer;
 
 /**
- * Don’t Pass Null and Do NOT return it
+ * Don’t Pass Null and Do NOT return it at all
  */
 public class passNull {
     public double xProjection(Point p1, Point p2) {
